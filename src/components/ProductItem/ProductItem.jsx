@@ -17,6 +17,10 @@ const ProductItem = ({ product }) => {
           <p className={s.itemCondition}>Slightly used</p>
         </span>
       </div>
+      <span className={s.itemUsedCondition}>USED</span>
+      <button className={s.itemBtn}>
+        PICK-UP IN <span>2200</span>
+      </button>
     </li>
   );
 };

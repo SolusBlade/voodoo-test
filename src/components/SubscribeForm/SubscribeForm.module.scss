@@ -1,16 +1,26 @@
-
-.form{
-    @apply flex gap-3 justify-center mb-32 ;
-    &Title{
-        @apply text-xl text-center mb-6;
+.form {
+  @apply flex gap-3 justify-center mb-32;
+  @media screen and (max-width: 390px) {
+    @apply flex-col;
+  }
+  &Title {
+    @apply text-xl text-center mb-6;
+  }
+  & > label {
+    @media screen and (max-width: 767px) {
+      @apply grow;
     }
-    &Input{
-        @apply w-129 px-4 py-2 rounded font-semibold outline-none placeholder:text-black;
+  }
+  &Input {
+    @apply w-129 px-4 py-2 rounded font-semibold outline-none placeholder:text-black;
+    @media screen and (max-width: 767px) {
+      @apply w-full;
     }
-    & > &Btn {
-        @apply px-4 py-2 bg-orange font-semibold rounded transition-colors;
-        &:hover{
-            @apply bg-orange-500;
-        }
+  }
+  & > &Btn {
+    @apply px-4 py-2 bg-orange font-semibold rounded transition-colors;
+    &:hover {
+      @apply bg-orange-500;
     }
+  }
 }

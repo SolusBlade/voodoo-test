@@ -1,28 +1,42 @@
 .header {
-    @apply border-b border-black;
-    &Container{
-        @apply py-12 flex justify-between w-318 m-auto items-start;
+  @apply py-12 border-b border-black;
+  &Container {
+    @apply flex justify-between max-w-378 m-auto items-start pr-30 pl-14;
+    @media screen and (max-width: 767px) {
+      @apply px-6 items-center;
     }
+  }
+  @media screen and (max-width: 767px) {
+    @apply py-6;
+  }
 }
 
 .logo {
-    @apply flex gap-3 font-sans font-extrabold text-5xl relative;
+  @apply flex gap-3 font-sans font-extrabold text-2xl relative;
+  @media screen and (min-width: 768px) {
+    @apply ml-11 text-5xl;
+  }
 }
 
-.logoImg{
-    @apply w-11 h-11 mt-2 absolute -left-14 top-0;
+.logoImg {
+  @apply w-6 h-6 mt-2;
+  @media screen and (min-width: 768px) {
+    @apply w-11 h-11 absolute -left-14 top-0;
+  }
 }
 
-.btnWrap{
-    @apply flex gap-2.5 items-center mt-2 ;
-    
+.btnWrap {
+  @apply flex gap-2.5 items-center mt-2;
 }
-.btn{
-    @apply text-xl font-semibold transition-colors;
-    &:hover{
-        @apply underline;
-    }
+.btn {
+  @apply text-xl font-semibold transition-colors;
+  &:hover {
+    @apply underline;
+  }
+  @media screen and (max-width: 767px) {
+    @apply text-sm;
+  }
 }
-.signInBtn{
-    @apply text-white bg-black p-3 rounded py-1;
+.signInBtn {
+  @apply text-white bg-black p-3 rounded py-1;
 }

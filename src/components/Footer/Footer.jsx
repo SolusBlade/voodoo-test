@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={s.footerContainer}>
-        <img src={logo} alt="logo" className={s.logoImg} />
+        <div className={s.logoWrap}>
+          <img src={logo} alt="logo" className={s.logoImg} />
+        </div>
         <div className={s.footerLinksWrap}>
           <ul>
             <li>FAQ</li>

@@ -20,6 +20,7 @@ const InfoBar = () => {
           <p className={s.infoIcoText}>Alpha</p>
         </div>
         <p className={s.infoText}>Important info regarding our service</p>
+        <p className={s.infoTextMob}>Important info</p>
         <img
           className={clsx(s.infoArrow, isOpen && s.isOpen)}
           src={arrowIco}
@@ -28,7 +29,10 @@ const InfoBar = () => {
       </div>
       <div className={clsx(s.infoHidden, isOpen && s.isOpen)}>
         <span className={s.infoHiddenText}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, aliquid quam. Quibusdam consectetur ipsam temporibus ipsum a est voluptatem ut ratione? Dicta iusto consequatur porro dolorum, suscipit exercitationem hic quam.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A tempora,
+          temporibus laborum error ea consequatur. Nobis quidem quae hic, atque,
+          blanditiis aperiam alias, laudantium nam officiis debitis vel sequi
+          sapiente?
         </span>
       </div>
     </div>

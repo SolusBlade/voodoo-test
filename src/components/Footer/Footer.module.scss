@@ -1,19 +1,33 @@
 .footer {
-    @apply border-t border-black bg-white py-20 ;
-    &Container{
-        @apply flex w-318 mx-auto;
+  @apply border-t border-black bg-white py-20;
+  @media screen and (max-width: 767px) {
+    @apply py-12;
+  }
+  &Container {
+    @apply flex max-w-378 mx-auto pl-30 pr-30;
+    @media screen and (max-width: 767px) {
+      @apply flex-col-reverse px-12 gap-y-14;
     }
-    &LinksWrap{
-        @apply flex gap-x-6 text-sm font-bold;
-        & > ul {
-            @apply w-75 flex flex-col gap-y-4;
-        }
-        & li {
-            @apply cursor-pointer;
-        }
+  }
+  &LinksWrap {
+    @apply flex gap-x-6 text-sm font-bold w-full;
+    & > ul {
+      @apply max-w-75 w-full flex flex-col gap-y-4;
     }
+    & li {
+      @apply cursor-pointer;
+    }
+    @media screen and (max-width: 767px) {
+      @apply flex-col gap-y-12;
+    }
+  }
 }
-
-.logoImg{
-    @apply w-20 mx-28 mt-2;
+.logoWrap {
+  @apply max-w-75 mx-auto;
+  @media screen and (min-width: 768px) {
+    @apply w-75 flex-grow-0;
+  }
+}
+.logoImg {
+  @apply w-20 mt-2 mx-auto;
 }

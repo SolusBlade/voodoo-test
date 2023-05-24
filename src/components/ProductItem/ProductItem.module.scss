@@ -1,14 +1,30 @@
 .item {
+  @apply relative;
   &Img {
     @apply w-75 h-75 block border border-black rounded mb-3;
   }
-  &TextWrap{
+  &TextWrap {
     @apply flex justify-between text-sm;
   }
-  &Title{
+  &Title {
     @apply font-bold w-36;
   }
-  &Condition{
+  &Condition {
     @apply font-medium text-end;
+  }
+  &UsedCondition {
+    @apply absolute top-3 left-3 px-2 py-1 bg-black rounded text-lsand text-xs;
+  }
+  &Btn {
+    @apply font-bold text-center text-sm text-white py-3 w-full bg-black rounded mt-3 transition-opacity;
+    &:hover {
+      @apply opacity-80;
+    }
+    @media screen and (min-width: 768px) {
+      @apply hidden;
+    }
+    & > span {
+      @apply underline;
+    }
   }
 }

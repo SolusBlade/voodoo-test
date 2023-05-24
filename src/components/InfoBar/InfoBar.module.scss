@@ -1,8 +1,8 @@
-.infoBox{
-    @apply relative w-full h-full mb-12; 
+.infoBox {
+  @apply relative w-full h-full mb-12;
 }
 .infoWrap {
-  @apply bg-black flex rounded w-full p-6 relative z-20 cursor-pointer; 
+  @apply bg-black flex rounded w-full p-6 relative z-20 cursor-pointer;
 }
 .infoBoxWrap {
   @apply flex items-center gap-2;
@@ -12,6 +12,15 @@
 }
 .infoText {
   @apply text-sm font-medium text-lsand ml-12;
+  @media screen and (max-width: 767px) {
+    @apply hidden;
+  }
+  &Mob {
+    @apply text-sm font-medium text-lsand ml-12;
+    @media screen and (min-width: 768px) {
+      @apply hidden;
+    }
+  }
 }
 .infoArrow {
   @apply ml-auto transition-transform;
@@ -19,13 +28,12 @@
     @apply rotate-90;
   }
 }
-.infoHidden{
-    @apply bg-black w-full h-full rounded absolute top-0 left-0 z-10 transition-transform p-3 text-center opacity-90;
-    &.isOpen{
-        @apply translate-y-full
-    }
-    &Text{
-        @apply text-sm font-medium text-lsand ml-12;
-    }
+.infoHidden {
+  @apply bg-black w-full h-auto rounded absolute top-0 left-0 z-10 transition-transform transition-opacity p-3 text-center opacity-0;
+  &.isOpen {
+    @apply translate-y-16 opacity-90;
+  }
+  &Text {
+    @apply text-sm font-medium text-lsand ml-12;
+  }
 }
-

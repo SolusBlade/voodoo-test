@@ -33,14 +33,23 @@ module.exports = {
         '.text-lsand': {
           color: '#FCF7E6',
         },
-        '.w-318': {
-          width: '1272px',
+        '.max-w-378': {
+          maxWidth: '1512px',
         },
         '.w-129': {
           width: '518px',
         },
+        '.max-w-75': {
+          maxWidth: '300px',
+        },
         '.w-75': {
           width: '300px',
+        },
+        '.max-w-85': {
+          maxWidth: '342px',
+        },
+        '.max-w-97': {
+          maxWidth: '390px',
         },
         '.h-75': {
           height: '300px',

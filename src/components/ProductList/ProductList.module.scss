@@ -1,6 +1,10 @@
-.section{
-    @apply  pt-25 w-318 m-auto;
+.section {
+  @apply pt-25 max-w-378 m-auto pl-30 pr-30;
+
+  @media screen and (max-width: 864px) {
+    @apply p-6;
+  }
 }
-.list{
-    @apply flex gap-x-6 gap-y-12 flex-wrap mb-24;
+.list {
+  @apply flex gap-x-6 gap-y-12 flex-wrap mb-24 justify-center;
 }
