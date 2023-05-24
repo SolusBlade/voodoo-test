@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/voodoo-test/static/css/main.83bf823b.css",
-    "main.js": "/voodoo-test/static/js/main.4f7e6462.js",
+    "main.css": "/voodoo-test/static/css/main.edc7ec0e.css",
+    "main.js": "/voodoo-test/static/js/main.553d2dfd.js",
     "index.html": "/voodoo-test/index.html",
     "static/media/logo.svg": "/voodoo-test/static/media/logo.c907d74bb83ab4af1cee50d3c3a49cb0.svg",
     "static/media/infoIco.svg": "/voodoo-test/static/media/infoIco.a8d055cbfc1ba9fb4952744e0cdac782.svg",
     "static/media/arrow.svg": "/voodoo-test/static/media/arrow.2e134b18a156983318cb121c770bf773.svg",
-    "main.83bf823b.css.map": "/voodoo-test/static/css/main.83bf823b.css.map",
-    "main.4f7e6462.js.map": "/voodoo-test/static/js/main.4f7e6462.js.map"
+    "main.edc7ec0e.css.map": "/voodoo-test/static/css/main.edc7ec0e.css.map",
+    "main.553d2dfd.js.map": "/voodoo-test/static/js/main.553d2dfd.js.map"
   },
   "entrypoints": [
-    "static/css/main.83bf823b.css",
-    "static/js/main.4f7e6462.js"
+    "static/css/main.edc7ec0e.css",
+    "static/js/main.553d2dfd.js"
   ]
 }
