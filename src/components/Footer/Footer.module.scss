@@ -1,0 +1,19 @@
+.footer {
+    @apply border-t border-black bg-white py-20 ;
+    &Container{
+        @apply flex w-318 mx-auto;
+    }
+    &LinksWrap{
+        @apply flex gap-x-6 text-sm font-bold;
+        & > ul {
+            @apply w-75 flex flex-col gap-y-4;
+        }
+        & li {
+            @apply cursor-pointer;
+        }
+    }
+}
+
+.logoImg{
+    @apply w-20 mx-28 mt-2;
+}

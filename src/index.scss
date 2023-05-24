@@ -1,0 +1,11 @@
+@import-normalize;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Space Grotesk";
+  @apply m-0 text-base text-black bg-lsand;
+}
+

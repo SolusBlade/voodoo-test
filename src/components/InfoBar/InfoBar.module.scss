@@ -1,0 +1,31 @@
+.infoBox{
+    @apply relative w-full h-full mb-12; 
+}
+.infoWrap {
+  @apply bg-black flex rounded w-full p-6 relative z-20 cursor-pointer; 
+}
+.infoBoxWrap {
+  @apply flex items-center gap-2;
+}
+.infoIcoText {
+  @apply uppercase font-bold text-lsand;
+}
+.infoText {
+  @apply text-sm font-medium text-lsand ml-12;
+}
+.infoArrow {
+  @apply ml-auto transition-transform;
+  &.isOpen {
+    @apply rotate-90;
+  }
+}
+.infoHidden{
+    @apply bg-black w-full h-full rounded absolute top-0 left-0 z-10 transition-transform p-3 text-center opacity-90;
+    &.isOpen{
+        @apply translate-y-full
+    }
+    &Text{
+        @apply text-sm font-medium text-lsand ml-12;
+    }
+}
+

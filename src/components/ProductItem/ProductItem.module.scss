@@ -1,0 +1,14 @@
+.item {
+  &Img {
+    @apply w-75 h-75 block border border-black rounded mb-3;
+  }
+  &TextWrap{
+    @apply flex justify-between text-sm;
+  }
+  &Title{
+    @apply font-bold w-36;
+  }
+  &Condition{
+    @apply font-medium text-end;
+  }
+}
